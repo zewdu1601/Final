@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480">
+  <defs>
+    <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#fce7f3"/><stop offset="1" stop-color="#ffe4d6"/></linearGradient>
+    <linearGradient id="jar" x2="1"><stop stop-color="#fff"/><stop offset="1" stop-color="#fbcfe8"/></linearGradient>
+    <filter id="shadow" x="-30%" y="-25%" width="160%" height="170%"><feDropShadow dx="0" dy="15" stdDeviation="13" flood-color="#9d174d" flood-opacity=".2"/></filter>
+  </defs>
+  <rect width="640" height="480" rx="32" fill="url(#bg)"/>
+  <circle cx="500" cy="88" r="86" fill="#fff" opacity=".36"/>
+  <circle cx="122" cy="370" r="76" fill="#fff" opacity=".3"/>
+  <g filter="url(#shadow)">
+    <rect x="234" y="168" width="172" height="194" rx="43" fill="url(#jar)" stroke="#f9a8d4" stroke-width="5"/>
+    <rect x="219" y="145" width="202" height="51" rx="19" fill="#be185d"/>
+    <rect x="234" y="150" width="172" height="14" rx="7" fill="#f9a8d4"/>
+    <path d="M271 238h98" stroke="#db2777" stroke-width="4" opacity=".55"/>
+    <text x="320" y="274" fill="#9d174d" font-family="Arial,sans-serif" font-size="22" font-weight="800" text-anchor="middle" letter-spacing="2">NOURISH</text>
+    <text x="320" y="301" fill="#be185d" font-family="Arial,sans-serif" font-size="14" font-weight="600" text-anchor="middle" letter-spacing="3">DAILY CREAM</text>
+    <path d="M302 325q18-23 36 0-18 20-36 0z" fill="#ec4899"/>
+  </g>
+  <text x="320" y="430" fill="#9d174d" font-family="Arial,sans-serif" font-size="20" font-weight="700" text-anchor="middle" letter-spacing="4">DAILY SKINCARE</text>
+</svg>

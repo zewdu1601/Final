@@ -1,0 +1,338 @@
+/* ============ NOT FOUND PAGE ============ */
+.notfound-page {
+  min-height: calc(100vh - 80px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(135deg, #f5f3ff 0%, #ede9fe 50%, #e0e7ff 100%);
+  padding: 40px 20px;
+}
+
+/* ============ BACKGROUND SHAPES ============ */
+.bg-shapes {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.shape {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.35;
+  filter: blur(40px);
+  animation: float 8s ease-in-out infinite;
+}
+
+.shape-1 {
+  width: 260px;
+  height: 260px;
+  background: #a78bfa;
+  top: -80px;
+  left: -80px;
+  animation-delay: 0s;
+}
+
+.shape-2 {
+  width: 200px;
+  height: 200px;
+  background: #818cf8;
+  bottom: -60px;
+  right: -60px;
+  animation-delay: 2s;
+}
+
+.shape-3 {
+  width: 160px;
+  height: 160px;
+  background: #f0abfc;
+  top: 40%;
+  right: 10%;
+  animation-delay: 4s;
+}
+
+.shape-4 {
+  width: 140px;
+  height: 140px;
+  background: #c4b5fd;
+  bottom: 20%;
+  left: 8%;
+  animation-delay: 6s;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0) scale(1); }
+  50%      { transform: translateY(-30px) scale(1.05); }
+}
+
+/* ============ CONTENT ============ */
+.notfound-content {
+  position: relative;
+  z-index: 2;
+  max-width: 720px;
+  width: 100%;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  border-radius: 24px;
+  padding: 48px 32px;
+  box-shadow: 0 20px 50px rgba(79, 70, 229, 0.15);
+}
+
+/* ============ 404 CODE ============ */
+.error-code {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+
+.digit {
+  font-size: 7rem;
+  font-weight: 900;
+  line-height: 1;
+  background: linear-gradient(135deg, #4f46e5, #9333ea);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.digit.zero {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  height: 120px;
+  border: 6px solid;
+  border-image: linear-gradient(135deg, #4f46e5, #9333ea) 1;
+  border-radius: 50%;
+  background: transparent;
+  -webkit-text-fill-color: unset;
+  animation: spin 6s linear infinite;
+}
+
+.zero-inner {
+  font-size: 3.2rem;
+  display: inline-block;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+/* ============ TITLES ============ */
+.error-title {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #111827;
+  margin-bottom: 12px;
+}
+
+.error-message {
+  font-size: 1.05rem;
+  color: #4b5563;
+  line-height: 1.7;
+  max-width: 520px;
+  margin: 0 auto 24px;
+}
+
+/* ============ REQUESTED PATH ============ */
+.requested-path {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #f3f4f6;
+  border: 1px solid #e5e7eb;
+  border-radius: 999px;
+  padding: 8px 16px;
+  font-size: 0.9rem;
+  margin-bottom: 20px;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.path-label {
+  color: #6b7280;
+  font-weight: 600;
+}
+
+.path-value {
+  color: #dc2626;
+  background: #fee2e2;
+  padding: 2px 8px;
+  border-radius: 6px;
+  font-family: 'Courier New', monospace;
+  font-size: 0.85rem;
+  word-break: break-all;
+}
+
+/* ============ REDIRECT NOTICE ============ */
+.redirect-notice {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  background: #eef2ff;
+  border: 1px solid #c7d2fe;
+  color: #4338ca;
+  border-radius: 10px;
+  padding: 10px 16px;
+  font-size: 0.95rem;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+}
+
+.redirect-notice strong {
+  color: #4f46e5;
+}
+
+.cancel-redirect {
+  background: transparent;
+  border: 1px solid #4f46e5;
+  color: #4f46e5;
+  padding: 4px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+.cancel-redirect:hover {
+  background: #4f46e5;
+  color: #fff;
+}
+
+/* ============ ACTIONS ============ */
+.error-actions {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  margin-bottom: 36px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  padding: 12px 26px;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  transition: all 0.25s ease;
+  font-family: inherit;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #4f46e5, #9333ea);
+  color: #fff;
+  box-shadow: 0 6px 18px rgba(79, 70, 229, 0.35);
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(79, 70, 229, 0.45);
+}
+
+.btn-outline {
+  background: #fff;
+  color: #4f46e5;
+  border: 2px solid #4f46e5;
+}
+
+.btn-outline:hover {
+  background: #ede9fe;
+  transform: translateY(-2px);
+}
+
+/* ============ QUICK LINKS ============ */
+.quick-links p {
+  font-size: 0.95rem;
+  color: #6b7280;
+  margin-bottom: 14px;
+  font-weight: 600;
+}
+
+.link-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 10px;
+}
+
+.quick-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  padding: 14px 10px;
+  border-radius: 10px;
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  color: #374151;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: all 0.25s ease;
+}
+
+.quick-link:hover {
+  background: #f5f3ff;
+  border-color: #a78bfa;
+  color: #4f46e5;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 14px rgba(79, 70, 229, 0.15);
+}
+
+.link-icon {
+  font-size: 1.5rem;
+}
+
+/* ============ RESPONSIVE ============ */
+@media (max-width: 640px) {
+  .notfound-content {
+    padding: 32px 20px;
+    border-radius: 18px;
+  }
+
+  .digit {
+    font-size: 4.5rem;
+  }
+
+  .digit.zero {
+    width: 80px;
+    height: 80px;
+    border-width: 4px;
+  }
+
+  .zero-inner {
+    font-size: 2rem;
+  }
+
+  .error-title {
+    font-size: 1.5rem;
+  }
+
+  .error-message {
+    font-size: 0.95rem;
+  }
+
+  .error-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .btn {
+    width: 100%;
+  }
+
+  .requested-path {
+    flex-direction: column;
+    border-radius: 12px;
+  }
+}

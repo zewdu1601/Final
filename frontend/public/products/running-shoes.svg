@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480">
+  <defs>
+    <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#ffedd5"/><stop offset="1" stop-color="#fecdd3"/></linearGradient>
+    <linearGradient id="shoe" x2="1" y2="1"><stop stop-color="#fb7185"/><stop offset="1" stop-color="#7c3aed"/></linearGradient>
+    <filter id="shadow" x="-20%" y="-30%" width="150%" height="180%"><feDropShadow dx="0" dy="16" stdDeviation="12" flood-color="#9f1239" flood-opacity=".22"/></filter>
+  </defs>
+  <rect width="640" height="480" rx="32" fill="url(#bg)"/>
+  <circle cx="510" cy="90" r="80" fill="#fff" opacity=".32"/>
+  <g filter="url(#shadow)" transform="rotate(-8 320 260)">
+    <path d="M115 288q58-8 94-96l28-67q9-22 28-10l54 40q35 29 62 40l100 34q48 16 65 70l-5 38H118z" fill="url(#shoe)"/>
+    <path d="M125 318h423q6 0 7 10l-3 24q-2 15-18 17H139q-25-3-28-21l-2-16q0-13 16-14z" fill="#fff"/>
+    <path d="M231 206l91 23m-107-1 96 24m-111 0 97 23" stroke="#fff" stroke-width="10" stroke-linecap="round"/>
+    <path d="M271 160l-35 92" stroke="#fed7aa" stroke-width="11" stroke-linecap="round"/>
+    <path d="M331 253q47 24 100 25" fill="none" stroke="#fda4af" stroke-width="9" stroke-linecap="round"/>
+  </g>
+  <text x="320" y="440" fill="#9f1239" font-family="Arial,sans-serif" font-size="20" font-weight="700" text-anchor="middle" letter-spacing="4">MOVE YOUR WAY</text>
+</svg>

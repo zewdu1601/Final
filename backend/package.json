@@ -1,0 +1,10 @@
+{
+  "name": "ai-store-backend",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": ".venv\\Scripts\\python.exe -m uvicorn app.main:app --reload --port 8000",
+    "seed": ".venv\\Scripts\\python.exe -m data.seed_db",
+    "create-admin": ".venv\\Scripts\\python.exe -m data.create_admin"
+  }
+}

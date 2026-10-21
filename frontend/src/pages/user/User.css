@@ -1,0 +1,284 @@
+.user-page {
+  max-width: 1080px;
+}
+
+.user-page-heading {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 28px;
+}
+
+.user-page-heading h1 {
+  margin: 2px 0 6px;
+  font-size: clamp(1.8rem, 4vw, 2.4rem);
+}
+
+.user-page-heading p:last-child,
+.profile-form-heading p,
+.profile-form-footer p {
+  color: var(--text-muted);
+}
+
+.user-page-eyebrow {
+  color: #6d28d9;
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+}
+
+.profile-layout {
+  display: grid;
+  grid-template-columns: minmax(230px, 0.75fr) minmax(0, 1.7fr);
+  align-items: start;
+  gap: 24px;
+}
+
+.profile-sidebar,
+.profile-form {
+  border: 1px solid var(--border-color);
+  border-radius: 18px;
+  background: var(--card-bg);
+  box-shadow: 0 12px 34px rgba(31, 41, 55, 0.06);
+}
+
+.profile-sidebar {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 28px;
+}
+
+.profile-sidebar .avatar {
+  display: grid;
+  width: 76px;
+  height: 76px;
+  place-items: center;
+  margin-bottom: 18px;
+  border: 4px solid rgba(124, 58, 237, 0.12);
+  border-radius: 50%;
+  color: #fff;
+  background: linear-gradient(140deg, #7c3aed, #4f46e5);
+  font-size: 1.8rem;
+  font-weight: 800;
+}
+
+.profile-sidebar h2 {
+  overflow-wrap: anywhere;
+  font-size: 1.25rem;
+}
+
+.profile-sidebar > p {
+  max-width: 100%;
+  margin-top: 4px;
+  color: var(--text-muted);
+  overflow-wrap: anywhere;
+}
+
+.profile-account-role {
+  margin-top: 14px;
+  padding: 5px 10px;
+  border-radius: 999px;
+  color: #5b21b6;
+  background: #f3e8ff;
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
+.profile-sidebar-divider {
+  width: 100%;
+  height: 1px;
+  margin: 24px 0 18px;
+  background: var(--border-color);
+}
+
+.profile-sidebar > a {
+  color: #6d28d9;
+  font-weight: 700;
+}
+
+.profile-sidebar > a span {
+  margin-left: 5px;
+}
+
+.profile-form {
+  padding: 30px;
+}
+
+.password-change-form {
+  margin-top: 24px;
+}
+
+.review-page-layout {
+  display: grid;
+  grid-template-columns: minmax(220px, 0.7fr) minmax(0, 1.5fr);
+  align-items: start;
+  gap: 24px;
+}
+
+.review-product-list {
+  display: grid;
+  gap: 10px;
+}
+
+.review-product-option {
+  display: grid;
+  gap: 5px;
+  padding: 16px;
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  color: var(--text-color);
+  background: var(--card-bg);
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+
+.review-product-option.is-selected {
+  border-color: #7c3aed;
+  box-shadow: 0 0 0 2px rgba(124, 58, 237, 0.12);
+}
+
+.review-product-option span {
+  font-weight: 700;
+}
+
+.review-product-option small,
+.review-form .form-group small {
+  color: var(--text-muted);
+}
+
+.review-form h2 {
+  margin-bottom: 8px;
+}
+
+.review-form h3 {
+  margin-bottom: 20px;
+  color: var(--text-muted);
+}
+
+.review-form select,
+.review-form textarea {
+  width: 100%;
+  padding: 11px 12px;
+  border: 1px solid var(--border-color);
+  border-radius: 9px;
+  color: var(--text-color);
+  background: var(--input-bg);
+  font: inherit;
+}
+
+.product-review-cta {
+  margin-top: 22px;
+  color: var(--text-muted);
+}
+
+.product-review-cta a {
+  color: #6d28d9;
+  font-weight: 700;
+}
+
+.password-change-form {
+  margin-top: 24px;
+}
+
+.profile-form-heading {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 18px;
+  margin-bottom: 24px;
+}
+
+.profile-form-heading h2 {
+  margin-bottom: 4px;
+  font-size: 1.25rem;
+}
+
+.profile-id {
+  flex: 0 0 auto;
+  padding: 6px 10px;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  color: var(--text-muted);
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
+.profile-form .form-group {
+  display: grid;
+  gap: 7px;
+  margin-bottom: 20px;
+}
+
+.profile-form .form-group label {
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.profile-form .form-group input {
+  width: 100%;
+  min-height: 46px;
+  padding: 10px 12px;
+  border: 1px solid var(--border-color);
+  border-radius: 9px;
+  color: var(--text-color);
+  background: var(--input-bg);
+  font: inherit;
+}
+
+.profile-form .form-group input:focus {
+  border-color: #7c3aed;
+  outline: 3px solid rgba(124, 58, 237, 0.15);
+}
+
+.profile-form-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  margin-top: 8px;
+  padding-top: 20px;
+  border-top: 1px solid var(--border-color);
+}
+
+.profile-form-footer p {
+  max-width: 360px;
+  font-size: 0.85rem;
+}
+
+.profile-form-footer button:disabled {
+  cursor: wait;
+  opacity: 0.7;
+}
+
+@media (max-width: 700px) {
+  .user-page-heading {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .profile-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .review-page-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .profile-sidebar {
+    align-items: center;
+    text-align: center;
+  }
+
+  .profile-form {
+    padding: 22px;
+  }
+
+  .profile-form-heading,
+  .profile-form-footer {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}

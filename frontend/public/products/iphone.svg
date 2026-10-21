@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480">
+  <defs>
+    <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#dbeafe"/><stop offset="1" stop-color="#e9d5ff"/></linearGradient>
+    <linearGradient id="phone" x2="1" y2="1"><stop stop-color="#f8fafc"/><stop offset="1" stop-color="#94a3b8"/></linearGradient>
+    <linearGradient id="screen" x2="1" y2="1"><stop stop-color="#38bdf8"/><stop offset=".55" stop-color="#6366f1"/><stop offset="1" stop-color="#c084fc"/></linearGradient>
+    <filter id="shadow" x="-40%" y="-30%" width="180%" height="180%"><feDropShadow dx="0" dy="18" stdDeviation="14" flood-color="#312e81" flood-opacity=".28"/></filter>
+  </defs>
+  <rect width="640" height="480" rx="32" fill="url(#bg)"/>
+  <circle cx="500" cy="92" r="88" fill="#fff" opacity=".35"/>
+  <g filter="url(#shadow)" transform="rotate(-9 320 240)">
+    <rect x="225" y="48" width="190" height="378" rx="40" fill="url(#phone)" stroke="#64748b" stroke-width="5"/>
+    <rect x="237" y="61" width="166" height="352" rx="32" fill="#0f172a"/>
+    <rect x="246" y="70" width="148" height="334" rx="26" fill="url(#screen)"/>
+    <path d="M246 286q63-123 148-62v180H246z" fill="#c4b5fd" opacity=".55"/>
+    <path d="M246 326q71-93 148-21v99H246z" fill="#f0abfc" opacity=".52"/>
+    <rect x="291" y="76" width="58" height="15" rx="8" fill="#111827"/>
+    <circle cx="320" cy="83" r="3" fill="#475569"/>
+    <rect x="185" y="82" width="50" height="83" rx="18" fill="#cbd5e1" stroke="#64748b" stroke-width="4"/>
+    <circle cx="202" cy="101" r="10" fill="#0f172a" stroke="#94a3b8" stroke-width="3"/>
+    <circle cx="219" cy="130" r="10" fill="#0f172a" stroke="#94a3b8" stroke-width="3"/>
+    <circle cx="199" cy="148" r="7" fill="#fef3c7"/>
+  </g>
+  <text x="320" y="454" fill="#312e81" font-family="Arial,sans-serif" font-size="20" font-weight="700" text-anchor="middle" letter-spacing="4">IPHONE 16 PRO</text>
+</svg>

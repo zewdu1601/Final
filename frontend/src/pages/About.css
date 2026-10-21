@@ -1,0 +1,242 @@
+/* ============ ABOUT PAGE ============ */
+.about-page {
+  background-color: var(--bg-color);
+  min-height: 100vh;
+  padding-bottom: 1px;
+}
+
+.about-page .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* ============ HERO ============ */
+.about-page .about-hero {
+  height: 300px;
+  background: linear-gradient(135deg, #4f46e5, #9333ea);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  padding: 0 20px;
+  margin-bottom: 40px;
+}
+
+.about-page .about-hero h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.about-page .about-hero p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: 0 auto;
+  opacity: 0.9;
+}
+
+/* ============ SECTIONS ============ */
+.about-page .about-section {
+  padding: 40px 20px;
+}
+
+.about-page .about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.about-page .about-text h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+  color: #4f46e5;
+}
+
+.about-page .about-text p {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  margin-bottom: 16px;
+  color: var(--text-muted);
+}
+
+.about-page .about-image img {
+  width: 100%;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+/* ============ MISSION ============ */
+.about-page .mission-section {
+  background: var(--card-bg);
+  text-align: center;
+  border-radius: 20px;
+  margin: 40px auto;
+  max-width: 1000px;
+  border: 1px solid var(--border-color);
+}
+
+.about-page .mission-section h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: var(--text-color);
+}
+
+.about-page .mission-text {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: var(--text-muted);
+}
+
+/* ============ FEATURES ============ */
+.about-page .features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+  margin-top: 30px;
+}
+
+.about-page .feature-card {
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 30px 20px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.about-page .feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(79, 70, 229, 0.1);
+  border-color: #4f46e5;
+}
+
+.about-page .feature-icon {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.about-page .feature-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: var(--text-color);
+}
+
+.about-page .feature-card p {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* ============ STATS ============ */
+.about-page .stats-section {
+  background: #111827;
+  color: #fff;
+  border-radius: 20px;
+  margin: 40px auto;
+  max-width: 1000px;
+}
+
+.about-page .stats-section .section-title {
+  color: #fff;
+}
+
+.about-page .stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 24px;
+}
+
+.about-page .stat-card {
+  text-align: center;
+  padding: 24px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.about-page .stat-card h3 {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: #a78bfa;
+  margin-bottom: 6px;
+}
+
+.about-page .stat-card p {
+  font-size: 0.95rem;
+  color: #d1d5db;
+}
+
+/* ============ TECH STACK ============ */
+.about-page .tech-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 24px;
+  margin-top: 30px;
+}
+
+.about-page .tech-card {
+  text-align: center;
+  padding: 24px;
+  background: var(--card-bg);
+  border-radius: 12px;
+  border: 1px solid var(--border-color);
+  transition: 0.3s;
+}
+
+.about-page .tech-card:hover {
+  background: #ede9fe;
+  border-color: #a78bfa;
+}
+
+.about-page .tech-icon {
+  font-size: 2.5rem;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.about-page .tech-card h4 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--text-color);
+}
+
+.about-page .tech-card p {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+/* ============ CTA ============ */
+.about-page .about-cta {
+  background: linear-gradient(135deg, #4f46e5, #9333ea);
+  color: #fff;
+  text-align: center;
+  padding: 60px 20px;
+  border-radius: 20px;
+  margin: 40px auto;
+  max-width: 1000px;
+}
+
+.about-page .about-cta h2 {
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 12px;
+}
+
+.about-page .about-cta p {
+  font-size: 1.1rem;
+  margin-bottom: 24px;
+  opacity: 0.95;
+}
+
+/* ============ RESPONSIVE ============ */
+@media (max-width: 900px) {
+  .about-page .about-grid { grid-template-columns: 1fr; }
+  .about-page .about-hero h1 { font-size: 2.2rem; }
+}

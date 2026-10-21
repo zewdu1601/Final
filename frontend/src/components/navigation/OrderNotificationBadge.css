@@ -1,0 +1,30 @@
+.order-notification-badge {
+  display: inline-grid;
+  min-width: 18px;
+  height: 18px;
+  flex: 0 0 auto;
+  place-items: center;
+  margin-left: auto;
+  padding: 0 5px;
+  border: 1px solid #fff;
+  border-radius: 999px;
+  color: #fff;
+  background: #e5484d;
+  font-size: .65rem;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.order-notification-badge.has-error {
+  min-width: 17px;
+  height: 17px;
+  color: #fff;
+  background: #b91c1c;
+}
+
+.nav-icon-link .order-notification-badge {
+  position: absolute;
+  top: -4px;
+  right: -7px;
+  margin: 0;
+}
